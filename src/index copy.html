@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <!-- Logo Section -->
+          <div class="flex items-center">
+            <a href="#" class="text-xl font-bold text-gray-800">LogiCore</a>
+            <!-- <img src="assets/images/Logo.png" alt="Logo Brand" href="#" class="h-8 w-auto"></img> -->
+          </div>
+          <!-- Desktop Menu Links -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+            <a href="#" class="text-gray-600 hover:text-blue-600">About</a>
+            <a href="#" class="text-gray-600 hover:text-blue-600">Services</a>
+            <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
+          </div>
+          <!-- Mobile Hamburger Button -->
+          <div class="flex items-center md:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-600 hover:text-gray-900 focus:outline-none"
+            >
+              <svg
+                id="icon-burger"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <svg
+                id="icon-close"
+                class="h-6 w-6 hidden"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-4 pt-2 pb-4 space-y-2 border-t border-gray-100"
+      >
+        <a href="#" class="block text-gray-600 hover:text-gray-900 py-1"
+          >Beranda</a
+        >
+        <a href="#" class="block text-gray-600 hover:text-gray-900 py-1"
+          >Tentang</a
+        >
+        <a href="#" class="block text-gray-600 hover:text-gray-900 py-1"
+          >Layanan</a
+        >
+        <a href="#" class="block text-gray-600 hover:text-gray-900 py-1"
+          >Kontak</a
+        >
+      </div>
+    </nav>
+    <section
+      class="relative bg-cover bg-center bg-no-repeat min-h-[95vh] flex items-center pt-16"
+      style="
+        background-image: url('https://fastly.picsum.photos/id/8/5000/3333.jpg');
+      "
+    >
+      <div class="absolute inset-0 bg-black/70 z-0"></div>
+
+      <!-- Kontainer Konten -->
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
+        <div class="max-w-2xl text-left space-y-6">
+          <!-- Label/Badge Kecil -->
+          <span
+            class="inline-block px-3 py-1 text-sm font-semibold text-blue-400 bg-blue-900/40 rounded-full border border-blue-500/30"
+          >
+            Solusi Digital Modern
+          </span>
+
+          <!-- Judul Utama -->
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight"
+          >
+            Bangun Website Anda Sekarang
+          </h1>
+
+          <!-- Deskripsi -->
+          <p class="text-lg sm:text-xl text-gray-300">
+            Kami membantu Anda menciptakan platform digital yang super cepat,
+            responsif, dan siap memikat jutaan pelanggan di seluruh dunia.
+          </p>
+
+          <!-- Tombol Aksi (CTA) -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <a
+              href="#"
+              class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-md transition duration-200 text-center"
+            >
+              Mulai Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h1 class="text-3xl font-bold underline text-center">Hello world!</h1>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
